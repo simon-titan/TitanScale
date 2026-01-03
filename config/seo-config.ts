@@ -6,6 +6,5 @@ export const seoConfig = {
   defaultDescription: generalConfig.description,
   ogImage: "/og-image.jpg",
   robotsDisallowPaths: ["/app/*", "/api/*"],
-  twitterHandle: "@yourtwitterhandle",
-  locale: "en_US",
+  locale: "de_DE",
 };

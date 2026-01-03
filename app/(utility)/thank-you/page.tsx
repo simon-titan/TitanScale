@@ -6,9 +6,9 @@ import { generateMetadata } from "@/utils/metadata";
 import { EmptyState } from "@/components/ui/empty-state";
 
 export const metadata = generateMetadata({
-  title: "Thank You",
+  title: "Vielen Dank",
   description:
-    "Thank you for signing up. Please check your email to complete registration",
+    "Vielen Dank für deine Registrierung. Bitte überprüfe deine E-Mails, um die Registrierung abzuschließen",
   noIndex: true,
 });
 
@@ -21,16 +21,15 @@ export default function ThankYouPage() {
           <VStack>
             <EmptyState
               icon={<EnvelopeOpen />}
-              title="Almost there! Check your inbox."
-              description="We’ve sent you an email to complete your sign-up and set your
-                password. If you don’t see it shortly, please check your spam
-                folder."
+              title="Fast geschafft! Überprüfe dein Postfach."
+              description="Wir haben dir eine E-Mail gesendet, um deine Registrierung abzuschließen und dein
+                Passwort festzulegen. Falls du sie nicht gleich siehst, überprüfe bitte deinen Spam-Ordner."
             >
               <Box pt="4">
                 <Link href="https://mail.google.com">
                   <Button size="sm">
                     <ArrowSquareOut weight="duotone" />
-                    Open Gmail
+                    Gmail öffnen
                   </Button>
                 </Link>
               </Box>

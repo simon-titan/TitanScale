@@ -14,8 +14,8 @@ import { plans } from "./data";
 import { generateMetadata } from "@/utils/metadata";
 
 export const metadata = generateMetadata({
-  title: "Pricing",
-  description: "Explore our pricing plans tailored to your needs.",
+  title: "Preise",
+  description: "Entdecke unsere Preismodelle, die auf deine Bedürfnisse zugeschnitten sind.",
 });
 
 export default function PricingPage() {
@@ -27,7 +27,7 @@ export default function PricingPage() {
             <VStack gap={{ base: "5", md: "6" }}>
               <VStack gap={{ base: "3", md: "4" }}>
                 <Heading as="h1" textStyle={{ base: "4xl", md: "5xl" }}>
-                  Pricing
+                  Preise
                 </Heading>
               </VStack>
               <VStack gap="1">
@@ -36,31 +36,29 @@ export default function PricingPage() {
                   textStyle={{ base: "lg", md: "xl" }}
                   maxW="lg"
                 >
-                  Transparent pricing with no hidden fees.
+                  Starte kostenlos und steigere dich Schritt für Schritt.
                 </Text>
                 <Text
                   color="fg.muted"
                   textStyle={{ base: "lg", md: "xl" }}
                   maxW="lg"
                 >
-                  Cancel anytime.
+                  Bereite dich darauf vor, TitanScale selbst zu nutzen.
                 </Text>
               </VStack>
             </VStack>
           </VStack>
           <VStack gap="6">
             <VStack gap="8" alignSelf="stretch">
-              <Tabs.Root variant="enclosed" defaultValue={"annual"}>
+              <Tabs.Root variant="enclosed" defaultValue={"month"}>
                 <Center>
                   <Tabs.List>
-                    <Tabs.Trigger value="month">Monthly</Tabs.Trigger>
-                    <Tabs.Trigger value="annual">
-                      Yearly <Badge colorPalette="green">20% off</Badge>
-                    </Tabs.Trigger>
+                    <Tabs.Trigger value="month">Monatlich</Tabs.Trigger>
+                    <Tabs.Trigger value="annual">Jährlich</Tabs.Trigger>
                   </Tabs.List>
                 </Center>
                 <Tabs.Content value="annual">
-                  <SimpleGrid w="full" columns={{ base: 1, md: 2 }} gap="6">
+                  <SimpleGrid w="full" columns={{ base: 1, md: 3 }} gap="6">
                     <For each={plans}>
                       {(plan) => (
                         <PricingCard
@@ -73,7 +71,7 @@ export default function PricingPage() {
                   </SimpleGrid>
                 </Tabs.Content>
                 <Tabs.Content value="month">
-                  <SimpleGrid w="full" columns={{ base: 1, md: 2 }} gap="6">
+                  <SimpleGrid w="full" columns={{ base: 1, md: 3 }} gap="6">
                     <For each={plans}>
                       {(plan) => (
                         <PricingCard

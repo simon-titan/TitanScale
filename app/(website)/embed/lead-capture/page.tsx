@@ -7,7 +7,7 @@ import { LeadCapture } from "@/components/auth/embed";
 export const metadata = generateMetadata({
   title: "Lead Capture Embed Demo",
   description:
-    "See how the lead capture embed works in both popup and embedded modes",
+    "Sieh dir an, wie das Lead Capture Embed im Popup- und eingebetteten Modus funktioniert",
 });
 
 export default function LeadCaptureEmbedPage() {
@@ -33,9 +33,9 @@ export default function LeadCaptureEmbedPage() {
         <VStack gap={8}>
           <Heading size="3xl">Popup</Heading>
           <LeadCapture popup uid="BWzy5a9E">
-            <Button size="lg">Open Lead Capture Popup</Button>
+            <Button size="lg">Lead Capture Popup öffnen</Button>
           </LeadCapture>
-          <Heading size="3xl">On page</Heading>
+          <Heading size="3xl">Auf der Seite</Heading>
 
           <Box w="full" p={6} borderWidth="1px" borderRadius="lg" bg="bg.muted">
             <LeadCapture uid="BWzy5a9E" />

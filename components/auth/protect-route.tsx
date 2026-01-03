@@ -93,7 +93,7 @@ export default function ProtectedRoute({
               css={{ "--spinner-track-color": "colors.neutral.200" }}
             />
             <Text textStyle="lg" color="fg.subtle">
-              Loading...
+              Lädt...
             </Text>
           </VStack>
         </AbsoluteCenter>
@@ -109,19 +109,19 @@ export default function ProtectedRoute({
           <VStack>
             <EmptyState
               icon={<SignIn />}
-              title="Login to continue"
-              description={`This page is available only to ${
+              title="Anmelden um fortzufahren"
+              description={`Diese Seite ist nur für ${
                 plansWithAccess
-                  ? requiredPlans.map((p) => p.label).join(" or ")
-                  : "registered"
-              } users. To continue, log in to your existing account or sign up.`}
+                  ? requiredPlans.map((p) => p.label).join(" oder ")
+                  : "registrierte"
+              } Nutzer verfügbar. Um fortzufahren, melde dich mit deinem bestehenden Konto an oder registriere dich.`}
             >
               <Group>
                 <Login popup>
-                  <Button>Login</Button>
+                  <Button>Anmelden</Button>
                 </Login>
                 <SignUp popup>
-                  <Button variant="outline">Sign up</Button>
+                  <Button variant="outline">Registrieren</Button>
                 </SignUp>
               </Group>
             </EmptyState>
@@ -151,12 +151,12 @@ export default function ProtectedRoute({
           <VStack>
             <EmptyState
               icon={<Lock />}
-              title="Upgrade to unlock"
-              description={`This page is available only to users with a ${requiredPlans[0].label} plan. To continue, please upgrade to a ${requiredPlans[0].label} plan.`}
+              title="Upgrade zum Freischalten"
+              description={`Diese Seite ist nur für Nutzer mit einem ${requiredPlans[0].label} Plan verfügbar. Um fortzufahren, bitte auf einen ${requiredPlans[0].label} Plan upgraden.`}
             >
               {/* TODO: Directly open the right plan to upgrade to */}
               <Profile popup data-tab="planChange">
-                <Button>Change plan</Button>
+                <Button>Plan ändern</Button>
               </Profile>
             </EmptyState>
           </VStack>

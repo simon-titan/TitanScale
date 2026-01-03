@@ -4,9 +4,9 @@ import { generateMetadata } from "@/utils/metadata";
 import Markdown from "react-markdown";
 
 export const metadata = generateMetadata({
-  title: "Privacy Policy",
+  title: "Datenschutzerklärung",
   description:
-    "Understand how we collect, use, and protect your personal information",
+    "Erfahre, wie wir deine persönlichen Informationen sammeln, verwenden und schützen",
 });
 
 export default function PrivacyPolicy() {

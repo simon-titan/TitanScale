@@ -1,15 +1,15 @@
 export const authConfig = {
   plans: {
     free: {
-      uid: "7maOrK9E",
+      uid: "nmDKJKWy",
       label: "Free",
     },
     basic: {
-      uid: "L9nqaeQZ",
+      uid: "BWz8ALQE",
       label: "Basic",
     },
     pro: {
-      uid: "LmJZpYmP",
+      uid: "ZmNMD7W2",
       label: "Pro",
     },
   },

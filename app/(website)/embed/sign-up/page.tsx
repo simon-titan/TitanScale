@@ -5,9 +5,9 @@ import { Heading, VStack, Box, Container } from "@chakra-ui/react";
 import { SignUp } from "@/components/auth/embed";
 
 export const metadata = generateMetadata({
-  title: "Sign up Embed Demo",
+  title: "Registrierung Embed Demo",
   description:
-    "See how the sign up embed works in both popup and embedded modes",
+    "Sieh dir an, wie das Registrierungs-Embed im Popup- und eingebetteten Modus funktioniert",
 });
 
 export default function SignUpEmbedPage() {
@@ -23,7 +23,7 @@ export default function SignUpEmbedPage() {
           <VStack gap={{ base: "5", md: "6" }}>
             <VStack gap={{ base: "3", md: "4" }}>
               <Heading as="h1" textStyle={{ base: "4xl", md: "5xl" }}>
-                Sign up Embed
+                Registrierung Embed
               </Heading>
             </VStack>
           </VStack>
@@ -33,9 +33,9 @@ export default function SignUpEmbedPage() {
         <VStack gap={8}>
           <Heading size="3xl">Popup</Heading>
           <SignUp popup>
-            <Button size="lg">Open Sign Up Popup</Button>
+            <Button size="lg">Registrierungs-Popup öffnen</Button>
           </SignUp>
-          <Heading size="3xl">On page</Heading>
+          <Heading size="3xl">Auf der Seite</Heading>
           <Box w="full" p={6} borderWidth="1px" borderRadius="lg" bg="bg.muted">
             <SignUp />
           </Box>

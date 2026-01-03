@@ -6,7 +6,7 @@ import { Login } from "@/components/auth/embed";
 
 export const metadata = generateMetadata({
   title: "Login Embed Demo",
-  description: "See how the login embed works in both popup and embedded modes",
+  description: "Sieh dir an, wie das Login-Embed im Popup- und eingebetteten Modus funktioniert",
 });
 
 export default function LoginEmbedPage() {
@@ -32,9 +32,9 @@ export default function LoginEmbedPage() {
         <VStack gap={8}>
           <Heading size="3xl">Popup</Heading>
           <Login popup>
-            <Button size="lg">Open Login Popup</Button>
+            <Button size="lg">Login-Popup öffnen</Button>
           </Login>
-          <Heading size="3xl">On page</Heading>
+          <Heading size="3xl">Auf der Seite</Heading>
           <Box w="full" p={6} borderWidth="1px" borderRadius="lg" bg="bg.muted">
             <Login />
           </Box>

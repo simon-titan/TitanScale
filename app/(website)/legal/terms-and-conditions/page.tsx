@@ -4,9 +4,9 @@ import { generateMetadata } from "@/utils/metadata";
 import Markdown from "react-markdown";
 
 export const metadata = generateMetadata({
-  title: "Terms and Conditions",
+  title: "Allgemeine Geschäftsbedingungen",
   description:
-    "Read our terms of service and legal agreements for using our platform",
+    "Lies unsere Nutzungsbedingungen und rechtlichen Vereinbarungen für die Nutzung unserer Plattform",
 });
 
 export default function TermsAndConditions() {
@@ -15,83 +15,83 @@ export default function TermsAndConditions() {
       <Prose mx="auto" size="lg" mt="28">
         <Markdown>
           {`
-# Terms and Conditions
+# Allgemeine Geschäftsbedingungen
 
-**Effective Date:** [Insert Date]
+**Gültig ab:** [Datum einfügen]
 
-Welcome to [Your Company Name]! These Terms and Conditions govern your use of our website, products, and services. By accessing or using our services, you agree to comply with these Terms and Conditions. If you do not agree, please do not use our services.
+Willkommen bei TitanScale! Diese Allgemeinen Geschäftsbedingungen regeln deine Nutzung unserer Website, Produkte und Dienstleistungen. Durch den Zugriff auf oder die Nutzung unserer Dienste erklärst du dich mit diesen Allgemeinen Geschäftsbedingungen einverstanden. Wenn du nicht einverstanden bist, nutze bitte unsere Dienste nicht.
 
-## 1. Definitions
+## 1. Definitionen
 
--  **"Service"** refers to the services provided by [Your Company Name], including but not limited to [list services, e.g., SaaS, membership access, online courses, digital products].
--  **"User"** refers to any individual or entity that accesses or uses our services.
--  **"Content"** refers to any text, images, videos, or other materials provided by [Your Company Name] through the Service.
+-  **"Dienst"** bezieht sich auf die von TitanScale bereitgestellten Dienstleistungen, einschließlich, aber nicht beschränkt auf SaaS, Mitgliedschaftszugang, Online-Kurse, digitale Produkte.
+-  **"Nutzer"** bezieht sich auf jede Person oder Entität, die auf unsere Dienste zugreift oder sie nutzt.
+-  **"Inhalt"** bezieht sich auf alle Texte, Bilder, Videos oder andere Materialien, die von TitanScale über den Dienst bereitgestellt werden.
 
-## 2. Acceptance of Terms
+## 2. Annahme der Bedingungen
 
-By using our Service, you confirm that you are at least 18 years old or have parental consent to use our services. You agree to provide accurate, current, and complete information during the registration process and to update such information to keep it accurate, current, and complete.
+Durch die Nutzung unseres Dienstes bestätigst du, dass du mindestens 18 Jahre alt bist oder die Zustimmung deiner Eltern hast, unsere Dienste zu nutzen. Du erklärst dich damit einverstanden, während des Registrierungsprozesses genaue, aktuelle und vollständige Informationen anzugeben und diese Informationen aktuell zu halten.
 
-## 3. Account Registration
+## 3. Kontoregistrierung
 
-To access certain features of our Service, you may be required to create an account. You are responsible for maintaining the confidentiality of your account information and for all activities that occur under your account. You agree to notify us immediately of any unauthorized use of your account.
+Um auf bestimmte Funktionen unseres Dienstes zuzugreifen, musst du möglicherweise ein Konto erstellen. Du bist verantwortlich für die Vertraulichkeit deiner Kontoinformationen und für alle Aktivitäten, die unter deinem Konto stattfinden. Du erklärst dich damit einverstanden, uns sofort über jede unbefugte Nutzung deines Kontos zu benachrichtigen.
 
-## 4. Payment Terms
+## 4. Zahlungsbedingungen
 
--  **Subscription Fees:** If you purchase a subscription, you agree to pay all fees associated with your subscription. All payments are non-refundable unless otherwise stated.
--  **Billing:** You authorize us to charge your designated payment method for the subscription fees and any applicable taxes.
+-  **Abonnementgebühren:** Wenn du ein Abonnement kaufst, erklärst du dich damit einverstanden, alle mit deinem Abonnement verbundenen Gebühren zu zahlen. Alle Zahlungen sind nicht erstattungsfähig, sofern nicht anders angegeben.
+-  **Abrechnung:** Du ermächtigst uns, deine angegebene Zahlungsmethode für die Abonnementgebühren und alle anfallenden Steuern zu belasten.
 
-## 5. License to Use Service
+## 5. Lizenz zur Nutzung des Dienstes
 
-Subject to your compliance with these Terms, [Your Company Name] grants you a limited, non-exclusive, non-transferable license to access and use the Service for your personal or internal business purposes.
+Vorbehaltlich deiner Einhaltung dieser Bedingungen gewährt dir TitanScale eine eingeschränkte, nicht ausschließliche, nicht übertragbare Lizenz, auf den Dienst zuzugreifen und ihn für deine persönlichen oder internen Geschäftszwecke zu nutzen.
 
-## 6. User Conduct
+## 6. Nutzerverhalten
 
-You agree not to:
--  Use the Service for any unlawful purpose.
--  Impersonate any person or entity.
--  Transmit any harmful or malicious code.
--  Disrupt or interfere with the security, integrity, or performance of the Service.
+Du erklärst dich damit einverstanden, den Dienst nicht zu nutzen für:
+-  Jegliche rechtswidrige Zwecke.
+-  Die Nachahmung einer Person oder Entität.
+-  Die Übertragung von schädlichem oder bösartigem Code.
+-  Die Störung oder Beeinträchtigung der Sicherheit, Integrität oder Leistung des Dienstes.
 
-## 7. Intellectual Property
+## 7. Geistiges Eigentum
 
-All Content provided through the Service is the property of [Your Company Name] or its licensors and is protected by intellectual property laws. You may not reproduce, distribute, or create derivative works without our express written permission.
+Alle über den Dienst bereitgestellten Inhalte sind Eigentum von TitanScale oder seiner Lizenzgeber und sind durch Gesetze zum geistigen Eigentum geschützt. Du darfst keine Inhalte ohne unsere ausdrückliche schriftliche Genehmigung reproduzieren, verteilen oder abgeleitete Werke erstellen.
 
-## 8. Termination
+## 8. Kündigung
 
-We may terminate or suspend your access to the Service at any time, without prior notice or liability, for any reason, including if you breach these Terms. Upon termination, your right to use the Service will immediately cease.
+Wir können deinen Zugang zum Dienst jederzeit ohne vorherige Ankündigung oder Haftung aus jedem Grund kündigen oder aussetzen, einschließlich, wenn du gegen diese Bedingungen verstößt. Bei Kündigung erlischt dein Recht zur Nutzung des Dienstes sofort.
 
-## 9. Disclaimer of Warranties
+## 9. Haftungsausschluss
 
-The Service is provided on an "as is" and "as available" basis. [Your Company Name] makes no warranties, express or implied, regarding the Service, including but not limited to its availability, reliability, or fitness for a particular purpose.
+Der Dienst wird "wie besehen" und "wie verfügbar" bereitgestellt. TitanScale gibt keine Garantien, weder ausdrücklich noch stillschweigend, bezüglich des Dienstes, einschließlich, aber nicht beschränkt auf seine Verfügbarkeit, Zuverlässigkeit oder Eignung für einen bestimmten Zweck.
 
-## 10. Limitation of Liability
+## 10. Haftungsbeschränkung
 
-To the fullest extent permitted by law, [Your Company Name] shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising out of or related to your use of the Service.
+Im gesetzlich zulässigen Umfang haftet TitanScale nicht für indirekte, zufällige, besondere, Folgeschäden oder Strafschäden, die aus deiner Nutzung des Dienstes entstehen oder damit zusammenhängen.
 
-## 11. Indemnification
+## 11. Freistellung
 
-You agree to indemnify and hold harmless [Your Company Name], its affiliates, and their respective officers, directors, employees, and agents from any claims, losses, liabilities, damages, costs, or expenses arising out of your use of the Service or your violation of these Terms.
+Du erklärst dich damit einverstanden, TitanScale, seine Tochtergesellschaften und ihre jeweiligen leitenden Angestellten, Direktoren, Mitarbeiter und Vertreter von allen Ansprüchen, Verlusten, Haftungen, Schäden, Kosten oder Ausgaben freizustellen, die aus deiner Nutzung des Dienstes oder deiner Verletzung dieser Bedingungen entstehen.
 
-## 12. Changes to Terms
+## 12. Änderungen der Bedingungen
 
-We reserve the right to modify these Terms at any time. We will notify you of any changes by posting the new Terms on our website. Your continued use of the Service after any changes constitutes your acceptance of the new Terms.
+Wir behalten uns das Recht vor, diese Bedingungen jederzeit zu ändern. Wir werden dich über Änderungen informieren, indem wir die neuen Bedingungen auf unserer Website veröffentlichen. Deine fortgesetzte Nutzung des Dienstes nach Änderungen stellt deine Annahme der neuen Bedingungen dar.
 
-## 13. Governing Law
+## 13. Anwendbares Recht
 
-These Terms shall be governed by and construed in accordance with the laws of [Your State/Country], without regard to its conflict of law principles.
+Diese Bedingungen unterliegen den Gesetzen der Bundesrepublik Deutschland, ohne Rücksicht auf deren Kollisionsnormen.
 
-## 14. Contact Information
+## 14. Kontaktinformationen
 
-If you have any questions about these Terms, please contact us at:
+Wenn du Fragen zu diesen Bedingungen hast, kontaktiere uns bitte unter:
 
-[Your Company Name]  
-[Your Address]  
-[Your Email Address]  
-[Your Phone Number]  
+TitanScale  
+[Deine Adresse]  
+[Deine E-Mail-Adresse]  
+[Deine Telefonnummer]  
 
 ---
 
-**Last Updated:** [Insert Date]
+**Zuletzt aktualisiert:** [Datum einfügen]
 
           `}
         </Markdown>

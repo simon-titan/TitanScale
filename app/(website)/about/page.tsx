@@ -20,10 +20,10 @@ export default function AboutPage() {
                 fontWeight="medium"
                 color="colorPalette.fg"
               >
-                About
+                Über uns
               </Text>
               <Heading as="h1" textStyle={{ base: "4xl", md: "5xl" }}>
-                Fugiat ex est amet excepteur eu dolor
+                TitanScale: Die Business-Software für skalierende Experten
               </Heading>
             </VStack>
             <Text
@@ -31,7 +31,7 @@ export default function AboutPage() {
               textStyle={{ base: "lg", md: "xl" }}
               maxW="3xl"
             >
-              Eu veniam aliquip sint Lorem nostrud.
+              Wir helfen Experten dabei, ihr Geschäft zu skalieren und ihre Prozesse zu optimieren.
             </Text>
           </VStack>
         </VStack>
@@ -40,13 +40,24 @@ export default function AboutPage() {
         <Prose mx="auto" size="lg">
           <Markdown>
             {`
-Consectetur deserunt et nostrud culpa officia consequat anim eu labore anim fugiat. Est reprehenderit mollit amet cillum. Cupidatat sit ullamco ea id excepteur commodo nostrud nulla esse amet anim commodo id. Et nisi magna est magna eu voluptate mollit et ullamco do tempor. Consequat minim ea elit pariatur duis proident dolor velit ad officia incididunt duis. Lorem mollit voluptate mollit aute irure velit sit et dolor elit pariatur Lorem. Laborum sunt enim exercitation cillum adipisicing laboris labore nisi laboris incididunt laboris do deserunt nostrud consequat. Labore aliquip cupidatat amet do non pariatur dolor ad.
+## Unsere Mission
 
-Velit ullamco minim culpa. Cupidatat eiusmod excepteur nostrud non ex tempor aliqua. Laboris ipsum amet eu pariatur ipsum nisi anim velit adipisicing aliqua magna est. Mollit quis aliqua magna exercitation ex commodo enim mollit Lorem voluptate exercitation enim culpa eiusmod.
+TitanScale wurde entwickelt, um Experten dabei zu helfen, ihr Geschäft zu skalieren und ihre Prozesse zu optimieren. Wir glauben daran, dass jeder Experte die Tools und die Infrastruktur verdient, die er braucht, um erfolgreich zu sein.
 
-Ut cillum id ex nulla magna quis veniam aute. Occaecat in pariatur officia consequat dolore est minim cupidatat consequat officia dolore do consequat fugiat. Irure ipsum ex ullamco magna consectetur ut. Culpa nisi eiusmod eiusmod non. Amet duis deserunt sit irure eiusmod cillum quis dolor non esse id. Consectetur officia non ipsum exercitation ex excepteur incididunt ad. Nulla non consequat quis sunt voluptate est aliqua. Pariatur excepteur nisi dolor eu ut non elit fugiat tempor.
+## Was wir tun
 
-Id sunt duis eiusmod aute pariatur laboris. Voluptate commodo culpa cupidatat elit irure consequat voluptate ex tempor anim id laboris culpa qui. Tempor eu adipisicing dolore dolor qui minim proident. Pariatur commodo sunt duis eiusmod ea. Velit reprehenderit tempor laboris nostrud id eu ea quis in. Et duis tempor laborum laborum ut incididunt. Deserunt qui eiusmod reprehenderit minim ipsum qui officia minim.
+Wir bieten eine vollständige Business-Software-Vorlage, die alle wichtigen Funktionen für den Start und Betrieb eines Online-Businesses enthält. Von der Authentifizierung über Zahlungen bis hin zu E-Mail-Marketing und Support – alles ist bereits integriert und einsatzbereit.
+
+## Unsere Werte
+
+- **Einfachheit**: Komplexe Technologie einfach gemacht
+- **Skalierbarkeit**: Von der ersten Idee bis zum großen Business
+- **Qualität**: Hochwertige Lösungen für hochwertige Ergebnisse
+- **Support**: Wir helfen dir bei jedem Schritt
+
+## Unser Team
+
+Unser Team besteht aus erfahrenen Entwicklern und Business-Experten, die verstehen, was es braucht, um erfolgreich zu sein. Wir arbeiten kontinuierlich daran, TitanScale zu verbessern und neue Features hinzuzufügen.
           `}
           </Markdown>
         </Prose>

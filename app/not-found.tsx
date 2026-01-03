@@ -13,8 +13,8 @@ import { generateMetadata } from "@/utils/metadata";
 import { ArrowLeft } from "@phosphor-icons/react/dist/ssr";
 
 export const metadata = generateMetadata({
-  title: "Page Not Found",
-  description: "The page you're looking for doesn't exist or has been moved",
+  title: "Seite nicht gefunden",
+  description: "Die gesuchte Seite existiert nicht oder wurde verschoben",
   noIndex: true,
 });
 
@@ -29,18 +29,18 @@ export default function NotFound() {
               textStyle={{ base: "3xl", md: "4xl" }}
               lineHeight="tight"
             >
-              Page not found
+              Seite nicht gefunden
             </Heading>
             <Text
               color="fg.muted"
               textStyle={{ base: "md", md: "lg" }}
               maxW="md"
             >
-              Sorry, we couldn't find the page you're looking for. Please check
-              the URL or navigate back to the homepage.
+              Entschuldigung, wir konnten die gesuchte Seite nicht finden. 
+              Bitte überprüfe die URL oder kehre zur Startseite zurück.
             </Text>
             <Text color="fg.muted" maxW="sm">
-              Need some help? Shoot us a note at{" "}
+              Brauchst du Hilfe? Schicke uns eine Nachricht an{" "}
               <Link
                 variant="underline"
                 href={`mailto:${projectConfig.general.support.email}`}
@@ -48,14 +48,14 @@ export default function NotFound() {
               >
                 {projectConfig.general.support.email}
               </Link>
-              . We're here to help!
+              . Wir helfen gerne!
             </Text>
           </VStack>
           <Box pt="4">
             <Link href="/">
               <Button variant="outline" size="sm">
                 <ArrowLeft />
-                Back to home
+                Zur Startseite
               </Button>
             </Link>
           </Box>

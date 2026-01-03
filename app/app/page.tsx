@@ -6,7 +6,7 @@ import ProtectedRoute from "@/components/auth/protect-route";
 
 export const metadata = generateMetadata({
   title: "Dashboard",
-  description: "Access your personal dashboard and manage your account",
+  description: "Zugriff auf dein persönliches Dashboard und verwalte dein Konto",
   noIndex: true,
 });
 
@@ -14,9 +14,9 @@ export default function App() {
   return (
     <ProtectedRoute>
       <Section header>
-        <Heading>App Page</Heading>
+        <Heading>Dashboard</Heading>
         <SignedIn isPrimaryContact={false}>
-          <Text>Primary content</Text>
+          <Text>Willkommen in deinem TitanScale Dashboard</Text>
         </SignedIn>
       </Section>
     </ProtectedRoute>

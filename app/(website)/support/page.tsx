@@ -25,8 +25,8 @@ export default function SupportPage() {
               textStyle={{ base: "lg", md: "xl" }}
               maxW="lg"
             >
-              Send us a message if you need help. We typically reply in 24
-              hours.
+              Schicke uns eine Nachricht, wenn du Hilfe benötigst. 
+              Wir antworten normalerweise innerhalb von 24 Stunden.
             </Text>
           </VStack>
         </VStack>

@@ -5,6 +5,7 @@ import Provider from "@/components/provider/provider";
 import Head from "next/head";
 import { projectConfig } from "@/config";
 import { useChatVisibility } from "@/utils/use-chat-visibility";
+import { Analytics } from "@/components/analytics";
 import "vanilla-cookieconsent/dist/cookieconsent.css";
 import "@/styles/cookie-banner-styles.css";
 import "@/styles/outseta-styles.css";
@@ -59,6 +60,7 @@ export default function AppLayout({ children }: { children: React.ReactNode }) {
           }}
         />
         <Provider>{children}</Provider>
+        <Analytics />
       </body>
     </html>
   );

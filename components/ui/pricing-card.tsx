@@ -39,28 +39,66 @@ export const PricingCard = (props: PricingCardProps) => {
     planPaymentTerms === "month"
       ? data.monthlyPrice.price
       : data.yearlyPrice.price;
+  const isFree = price === 0;
+  const isYearly = planPaymentTerms === "annual";
+  const monthlyPrice = data.monthlyPrice.price;
+  const yearlyPrice = data.yearlyPrice.price;
+  const savings = isYearly && !isFree ? monthlyPrice * 2 : 0;
+  
   return (
     <Card.Root
       size="lg"
+      position="relative"
+      overflow="visible"
       borderColor={data.recommended ? "colorPalette.solid" : undefined}
       {...rest}
     >
       {data.recommended && (
-        <Float placement="top-center">
-          <Badge variant="solid">Most popular</Badge>
+        <Float placement="top-center" zIndex={10}>
+          <Badge variant="solid" zIndex={10}>
+            Beliebteste Wahl
+          </Badge>
+        </Float>
+      )}
+      {isYearly && !isFree && savings > 0 && (
+        <Float 
+          placement="top-end" 
+          offsetY="2" 
+          offsetX="10"
+          zIndex={9}
+        >
+          <Badge colorPalette="green" variant="solid" zIndex={9}>
+            2 Monate gespart
+          </Badge>
         </Float>
       )}
       <Card.Body>
         <Stack gap="5">
           <Card.Title fontWeight="normal">{data.title}</Card.Title>
           <Stack gap="1">
-            <Span textStyle="5xl" lineHeight="1" fontWeight="medium">
-              {data.priceSymbol}
-              {price}
-            </Span>
-            <Span textStyle="sm" color="fg.muted">
-              per month
-            </Span>
+            {isFree ? (
+              <Span textStyle="5xl" lineHeight="1" fontWeight="medium">
+                Kostenlos
+              </Span>
+            ) : (
+              <>
+                <HStack gap="2" align="baseline">
+                  <Span textStyle="5xl" lineHeight="1" fontWeight="medium">
+                    {data.priceSymbol}
+                    {price}
+                  </Span>
+                  {isYearly && (
+                    <Span textStyle="lg" color="fg.muted" textDecoration="line-through">
+                      {data.priceSymbol}
+                      {monthlyPrice * 12}
+                    </Span>
+                  )}
+                </HStack>
+                <Span textStyle="sm" color="fg.muted">
+                  {isYearly ? "pro Jahr" : "pro Monat"}
+                </Span>
+              </>
+            )}
           </Stack>
           <Card.Description color="fg">{data.description}</Card.Description>
           <Stack gap="2">
@@ -71,15 +109,17 @@ export const PricingCard = (props: PricingCardProps) => {
               bg={!data.recommended ? "bg.panel" : undefined}
               data-o-auth="1"
               data-mode="popup"
-              data-widget-mode="register"
+              data-widget-mode={isFree ? "login" : "register"}
               data-plan-uid={data.uid}
               data-plan-payment-term={planPaymentTerms}
             >
-              Get Started <LuArrowRight />
+              {isFree ? "Jetzt starten" : "Jetzt starten"} <LuArrowRight />
             </Button>
-            <Text textStyle="xs" color="fg.muted" textAlign="center">
-              7-day free trial
-            </Text>
+            {!isFree && (
+              <Text textStyle="xs" color="fg.muted" textAlign="center">
+                7 Tage kostenlos testen
+              </Text>
+            )}
           </Stack>
         </Stack>
       </Card.Body>

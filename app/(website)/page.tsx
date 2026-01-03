@@ -48,13 +48,12 @@ export default async function Page() {
               mx="auto"
               lineHeight="tighter"
             >
-              Publish your next project without the usual headaches
+              TitanScale: Die Business-Software für skalierende Experten
             </Heading>
 
             <Text color="fg.muted" textStyle="lg" maxW={{ md: "lg" }} mx="auto">
-              Project Rocket is a starter/boilerplate template with all engines
-              ready to quickly build and publish your next project, whatever it
-              might be.
+              TitanScale ist eine Business-Software, die Experten dabei hilft,
+              ihr Geschäft zu skalieren und ihre Prozesse zu optimieren.
             </Text>
           </Stack>
 
@@ -65,12 +64,12 @@ export default async function Page() {
           >
             <Link href="/docs">
               <Button size="xl">
-                Get started <ArrowRight />
+                Loslegen <ArrowRight />
               </Button>
             </Link>
-            <Link href="https://github.com/wirtzdan/project-rocket">
+            <Link href="https://github.com">
               <Button variant="ghost" size="xl">
-                Github <ArrowSquareOut />
+                GitHub <ArrowSquareOut />
               </Button>
             </Link>
           </Stack>
@@ -86,13 +85,13 @@ export default async function Page() {
               mx="auto"
               lineHeight="tighter"
             >
-              Minimal tooling with powerful features
+              Minimales Tooling mit leistungsstarken Funktionen
             </Heading>
 
             <Text color="fg.muted" textStyle="lg" maxW={{ md: "lg" }} mx="auto">
-              This templates leverages Outsetas, NextJs and ChakraUIs core
-              functionality to save time and focus on shipping code that
-              actually matters.
+              Diese Software nutzt die Kernfunktionalität von Outseta, Next.js
+              und Chakra UI, um Zeit zu sparen und sich auf Code zu konzentrieren,
+              der wirklich wichtig ist.
             </Text>
           </Stack>
           <SimpleGrid columns={{ base: 1, md: 3 }} gap="4">
@@ -117,36 +116,36 @@ export default async function Page() {
 const features = [
   {
     icon: <UserCircle />,
-    title: "Authentication",
-    description: "Securly login in users and protect pages and elements",
+    title: "Authentifizierung",
+    description: "Sichere Anmeldung von Benutzern und Schutz von Seiten und Elementen",
   },
   {
     icon: <CreditCard />,
-    title: "Payments",
+    title: "Zahlungen",
     description:
-      "Setup one-time, subscription or usage billing for individual or teams",
+      "Einrichtung von Einmal-, Abonnement- oder Nutzungsabrechnungen für Einzelpersonen oder Teams",
   },
   {
     icon: <Palette />,
     title: "Theming",
     description:
-      "Customizable theme to quickly change the look and feel of your app",
+      "Anpassbares Design, um das Aussehen und die Atmosphäre Ihrer App schnell zu ändern",
   },
   {
     icon: <EnvelopeSimple />,
-    title: "Email Marketing",
+    title: "E-Mail-Marketing",
     description:
-      "Automated emails, broadcasts and drip campaigns to nurture users and drive sales",
+      "Automatisierte E-Mails, Rundschreiben und Drip-Kampagnen zur Betreuung von Benutzern und Steigerung des Umsatzes",
   },
   {
     icon: <Lifebuoy />,
-    title: "Support Desk",
+    title: "Support-Desk",
     description:
-      "Build-in support ticket system to make customers smile and keep them engaged",
+      "Integriertes Support-Ticket-System, um Kunden zufrieden zu stellen und sie zu binden",
   },
   {
     icon: <Cube />,
-    title: "Design System",
-    description: "Component library by Chakra UI to build anything you want",
+    title: "Design-System",
+    description: "Komponentenbibliothek von Chakra UI zum Erstellen von allem, was Sie möchten",
   },
 ];

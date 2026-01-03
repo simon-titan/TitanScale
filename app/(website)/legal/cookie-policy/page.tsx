@@ -4,9 +4,9 @@ import { generateMetadata } from "@/utils/metadata";
 import Markdown from "react-markdown";
 
 export const metadata = generateMetadata({
-  title: "Cookie Policy",
+  title: "Cookie-Richtlinie",
   description:
-    "Learn about how we use cookies and similar technologies to improve your experience",
+    "Erfahre, wie wir Cookies und ähnliche Technologien verwenden, um deine Erfahrung zu verbessern",
 });
 
 export default function CookiePolicy() {

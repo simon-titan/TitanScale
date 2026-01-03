@@ -17,7 +17,7 @@ export default function ContactPage() {
           <VStack gap={{ base: "5", md: "6" }}>
             <VStack gap={{ base: "3", md: "4" }}>
               <Heading as="h1" textStyle={{ base: "4xl", md: "5xl" }}>
-                Contact us
+                Kontakt
               </Heading>
             </VStack>
             <Text
@@ -25,8 +25,8 @@ export default function ContactPage() {
               textStyle={{ base: "lg", md: "xl" }}
               maxW="lg"
             >
-              Send us a message if you have question, feedback or an idea. We
-              typically reply in 24 hours.
+              Schicke uns eine Nachricht, wenn du Fragen, Feedback oder eine Idee hast. 
+              Wir antworten normalerweise innerhalb von 24 Stunden.
             </Text>
           </VStack>
         </VStack>

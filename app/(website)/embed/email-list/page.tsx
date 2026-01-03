@@ -5,9 +5,9 @@ import { Heading, VStack, Box, Container } from "@chakra-ui/react";
 import { EmailList } from "@/components/auth/embed";
 
 export const metadata = generateMetadata({
-  title: "Email List Embed Demo",
+  title: "E-Mail-Liste Embed Demo",
   description:
-    "See how the email list embed works in both popup and embedded modes",
+    "Sieh dir an, wie das E-Mail-Liste Embed im Popup- und eingebetteten Modus funktioniert",
 });
 
 export default function EmailListEmbedPage() {
@@ -23,7 +23,7 @@ export default function EmailListEmbedPage() {
           <VStack gap={{ base: "5", md: "6" }}>
             <VStack gap={{ base: "3", md: "4" }}>
               <Heading as="h1" textStyle={{ base: "4xl", md: "5xl" }}>
-                Email List Embed
+                E-Mail-Liste Embed
               </Heading>
             </VStack>
           </VStack>
@@ -33,9 +33,9 @@ export default function EmailListEmbedPage() {
         <VStack gap={8}>
           <Heading size="3xl">Popup</Heading>
           <EmailList uid="OW4k4p9g" popup>
-            <Button size="lg">Open Email List Popup</Button>
+            <Button size="lg">E-Mail-Liste Popup öffnen</Button>
           </EmailList>
-          <Heading size="3xl">On Page</Heading>
+          <Heading size="3xl">Auf der Seite</Heading>
           <Box w="full" p={6} borderWidth="1px" borderRadius="lg" bg="bg.muted">
             <EmailList uid="OW4k4p9g" />
           </Box>

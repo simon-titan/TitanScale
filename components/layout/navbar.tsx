@@ -58,41 +58,44 @@ export const NavbarLinkMenu = (props: StackProps) => {
           </Button>
         </MenuTrigger>
         <MenuContent>
-          <MenuItemGroup title="Pages">
+          <MenuItemGroup title="Seiten">
             <Link href="/pricing">
-              <MenuItem value="pricing">Pricing</MenuItem>
+              <MenuItem value="pricing">Preise</MenuItem>
             </Link>
             <Link href="/contact">
-              <MenuItem value="contact">Contact</MenuItem>
+              <MenuItem value="contact">Kontakt</MenuItem>
             </Link>
             <Link href="/support">
-              <MenuItem value="contact">Contact</MenuItem>
+              <MenuItem value="support">Support</MenuItem>
             </Link>
           </MenuItemGroup>
           <MenuSeparator />
           <MenuItemGroup title="Utility">
             <Link href="/thank-you">
-              <MenuItem value="thank-you">Thank you</MenuItem>
+              <MenuItem value="thank-you">Vielen Dank</MenuItem>
             </Link>
             <Link href="/not-found">
-              <MenuItem value="not-found">Not found</MenuItem>
+              <MenuItem value="not-found">Nicht gefunden</MenuItem>
             </Link>
             <Link href="/javascript">
-              <MenuItem value="javascript">Javascript</MenuItem>
+              <MenuItem value="javascript">JavaScript</MenuItem>
             </Link>
             <Link href="/legal/terms-and-conditions">
               <MenuItem value="terms-and-conditions">
-                Terms & Conditions
+                AGB
               </MenuItem>
             </Link>
           </MenuItemGroup>
           <MenuSeparator />
-          <MenuItemGroup title="Auth">
+          <MenuItemGroup title="Authentifizierung">
+            <Link href="/app/free">
+              <MenuItem value="free">Geschützte Seite (Free Plan)</MenuItem>
+            </Link>
             <Link href="/app/basic">
-              <MenuItem value="basic">Protected Page (Basic plan)</MenuItem>
+              <MenuItem value="basic">Geschützte Seite (Basis Plan)</MenuItem>
             </Link>
             <Link href="/app/pro">
-              <MenuItem value="pro">Protected Page (Pro plan)</MenuItem>
+              <MenuItem value="pro">Geschützte Seite (Pro Plan)</MenuItem>
             </Link>
           </MenuItemGroup>
           <MenuSeparator />
@@ -126,7 +129,7 @@ export const NavbarActionMenu = ({ type }: { type: "website" | "app" }) => {
           </Button>
         </Login>
         <SignUp popup>
-          <Button size="sm">Sign up</Button>
+          <Button size="sm">Registrieren</Button>
         </SignUp>
       </SignedOut>
       <SignedIn>
@@ -134,7 +137,7 @@ export const NavbarActionMenu = ({ type }: { type: "website" | "app" }) => {
           <UserMenu />
         ) : (
           <>
-            <Button size="sm">Go to app</Button>
+            <Button size="sm">Zur Plattform</Button>
           </>
         )}
       </SignedIn>

@@ -23,14 +23,14 @@ const socialLinks = [
 ];
 
 const Copyright = (props: TextProps) => (
-  <Text fontSize="sm" color="fg.muted" {...props}>
+  <Text fontSize="sm" color="gray.500" {...props}>
     &copy; {new Date().getFullYear()} {projectConfig.general.name}. All rights
     reserved.
   </Text>
 );
 
 export const Footer = () => (
-  <Container as="footer" py={{ base: "10", md: "12" }} maxW={{ base: "full", md: "6xl", lg: "7xl" }} px={{ base: "4", md: "6" }}>
+  <Container as="footer" py={{ base: "10", md: "12" }} maxW={{ base: "full", md: "6xl", lg: "7xl" }} px={{ base: "4", md: "6" }} bg="white" color="gray.900">
     <Stack gap="6">
       <Stack
         direction={{ base: "column", sm: "row" }}
@@ -39,17 +39,33 @@ export const Footer = () => (
         gap="6"
       >
         <Link href="/" _hover={{ opacity: 0.9 }}>
-          <Logo height="32" />
+          <Text
+            fontFamily="heading"
+            fontWeight="500"
+            fontSize="xl"
+            letterSpacing="-0.02em"
+            color="gray.900"
+          >
+            titan.
+          </Text>
         </Link>
         <HStack gap="6" flexWrap="wrap">
           {legalLinks.map(({ href, label }) => (
-            <Link key={href} href={href} fontSize="sm" color="fg.muted" _hover={{ color: "fg" }}>
+            <Link key={href} href={href} fontSize="sm" color="gray.600" _hover={{ color: "gray.900" }}>
               {label}
             </Link>
           ))}
           <HStack gap="4">
             {socialLinks.map(({ href, icon }, index) => (
-              <Link key={index} href={href} colorPalette="gray" aria-label={index === 0 ? "LinkedIn" : "GitHub"}>
+              <Link 
+                key={index} 
+                href={href} 
+                color="gray.600" 
+                _hover={{ color: "#01ADD5" }}
+                aria-label={index === 0 ? "LinkedIn" : "GitHub"}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <Icon size="md">{icon}</Icon>
               </Link>
             ))}

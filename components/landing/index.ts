@@ -1,4 +1,5 @@
 export { Hero } from "./hero";
+export { HomeHero } from "./home-hero";
 export { BusinessOSModules as ScalingGap } from "./scaling-gap";
 export { ValueStack } from "./value-stack";
 export { ProofRoi } from "./proof-roi";
